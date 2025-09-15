@@ -1,0 +1,13 @@
+### Editor
+/.ide/
+/.idea/
+*.code-workspace
+
+### Dev
+/vendor
+/console
+/.env
+/.*.php
+*.lock
+*.cache
+package-lock.json
