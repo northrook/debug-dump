@@ -1,0 +1,44 @@
+parameters:
+	level: 9
+	paths:
+		- src
+		- index.php
+	treatPhpDocTypesAsCertain: false
+	tips:
+		treatPhpDocTypesAsCertain: false
+	ignoreErrors:
+		-
+			message: '#Parameter.+callable\(mixed.+given.#'
+			path: *.php
+
+		-
+			message: '#Property.+callable\(mixed.+#'
+			path: *.php
+
+		-
+			message: '#Access to an undefined .+ property .+::\$.+#'
+			path: *.php
+
+		-
+			message: '#Access to an uninitialized readonly property .+::\$.+#'
+			path: *.php
+
+		-
+			message: '#Readonly property .+ is already assigned.#'
+			path: *.php
+
+		-
+			message: "#Readonly property .+ is assigned outside of the constructor.#"
+			path: *.php
+
+		-
+			message: "#Class .+ has an uninitialized readonly property .+ Assign it in the constructor.#"
+			path: *.php
+
+		-
+			message: "#Method .+ should return .+ but returns mixed.#"
+			path: *.php
+
+		-
+			message: "#Cannot cast mixed to .+.#"
+			path: *.php
